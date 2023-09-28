@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:backgroundTint="@color/Primary"
+    tools:context=".LoginActivity">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="160dp"
+        android:layout_height="160dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.060000002"
+        app:srcCompat="@drawable/ic_logo" />
+
+    <EditText
+        android:id="@+id/EmailInput"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginEnd="32dp"
+        android:background="@drawable/input_shape"
+        android:drawableLeft="@drawable/email_icon"
+        android:drawablePadding="10dp"
+        android:ems="10"
+        android:hint="Email"
+        android:inputType="text"
+        android:minHeight="48dp"
+        android:paddingLeft="20dp"
+        android:paddingTop="10dp"
+        android:paddingRight="10dp"
+        android:paddingBottom="10dp"
+        android:textColor="@color/Primary"
+        android:textColorHint="@color/Primary"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+    <EditText
+        android:id="@+id/PasswordInput"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:background="@drawable/input_shape"
+        android:drawableLeft="@drawable/lock_icon"
+        android:drawableRight="@drawable/visibility_icon"
+        android:drawablePadding="10dp"
+        android:ems="10"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:minHeight="48dp"
+        android:paddingLeft="20dp"
+        android:paddingTop="10dp"
+        android:paddingRight="10dp"
+        android:paddingBottom="10dp"
+        android:textColor="@color/Primary"
+        android:textColorHighlight="@color/Primary"
+        android:textColorHint="@color/Primary"
+        app:layout_constraintEnd_toEndOf="@+id/EmailInput"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/EmailInput"
+        app:layout_constraintTop_toBottomOf="@+id/EmailInput" />
+
+    <TextView
+        android:id="@+id/forgetPwd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Forget Password ?"
+        android:textColor="@color/Primary"
+        app:layout_constraintEnd_toEndOf="@+id/PasswordInput"
+        app:layout_constraintTop_toBottomOf="@+id/PasswordInput" />
+
+    <CheckBox
+        android:id="@+id/checkBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Remember Me"
+        android:textColor="@color/Primary"
+        app:layout_constraintStart_toStartOf="@+id/PasswordInput"
+        app:layout_constraintTop_toBottomOf="@+id/PasswordInput" />
+
+    <Button
+        android:id="@+id/sendEmailBtn"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:backgroundTint="@color/Primary"
+        android:text="Login"
+        app:layout_constraintEnd_toEndOf="@+id/PasswordInput"
+        app:layout_constraintStart_toStartOf="@+id/PasswordInput"
+        app:layout_constraintTop_toBottomOf="@+id/checkBox" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="35dp"
+        android:text="OR"
+        android:textColor="@color/Primary"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/sendEmailBtn"
+        app:layout_constraintStart_toStartOf="@+id/sendEmailBtn"
+        app:layout_constraintTop_toBottomOf="@+id/sendEmailBtn" />
+
+    <Button
+        android:id="@+id/fb_btn"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="88dp"
+        android:layout_marginEnd="8dp"
+        android:backgroundTint="#1C33C3"
+        android:text="Facebook"
+        app:layout_constraintEnd_toStartOf="@+id/google_btn"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/sendEmailBtn"
+        app:layout_constraintTop_toBottomOf="@+id/sendEmailBtn" />
+
+    <Button
+        android:id="@+id/google_btn"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="Google"
+        android:textColor="#000000"
+        app:layout_constraintBottom_toBottomOf="@+id/fb_btn"
+        app:layout_constraintEnd_toEndOf="@+id/sendEmailBtn"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/fb_btn"
+        app:layout_constraintTop_toTopOf="@+id/fb_btn" />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="@+id/google_btn"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/fb_btn"
+        app:layout_constraintTop_toBottomOf="@+id/google_btn"
+        android:textAlignment="center"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Don't have an account?"
+            android:textColor="@color/Primary"
+            ></TextView>
+
+        <TextView
+            android:id="@+id/goToRegisterBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Register Now"
+            android:textColor="@color/Primary"
+            android:textStyle="bold"></TextView>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
