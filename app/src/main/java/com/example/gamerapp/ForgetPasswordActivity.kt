@@ -10,7 +10,7 @@ class ForgetPasswordActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_forget_password)
 
-        val sendBtn:Button=findViewById(R.id.sendEmailBtn)
+        val sendBtn:Button=findViewById(R.id.loginBtn)
 
         sendBtn.setOnClickListener {
             val intent = Intent(this, OtpAvticity::class.java)

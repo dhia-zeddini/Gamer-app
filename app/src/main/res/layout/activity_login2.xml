@@ -88,7 +88,7 @@
         app:layout_constraintTop_toBottomOf="@+id/PasswordInput" />
 
     <Button
-        android:id="@+id/sendEmailBtn"
+        android:id="@+id/loginBtn"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="30dp"
@@ -106,9 +106,9 @@
         android:text="OR"
         android:textColor="@color/Primary"
         android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="@+id/sendEmailBtn"
-        app:layout_constraintStart_toStartOf="@+id/sendEmailBtn"
-        app:layout_constraintTop_toBottomOf="@+id/sendEmailBtn" />
+        app:layout_constraintEnd_toEndOf="@+id/loginBtn"
+        app:layout_constraintStart_toStartOf="@+id/loginBtn"
+        app:layout_constraintTop_toBottomOf="@+id/loginBtn" />
 
     <Button
         android:id="@+id/fb_btn"
@@ -120,8 +120,8 @@
         android:text="Facebook"
         app:layout_constraintEnd_toStartOf="@+id/google_btn"
         app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="@+id/sendEmailBtn"
-        app:layout_constraintTop_toBottomOf="@+id/sendEmailBtn" />
+        app:layout_constraintStart_toStartOf="@+id/loginBtn"
+        app:layout_constraintTop_toBottomOf="@+id/loginBtn" />
 
     <Button
         android:id="@+id/google_btn"
@@ -131,7 +131,7 @@
         android:text="Google"
         android:textColor="#000000"
         app:layout_constraintBottom_toBottomOf="@+id/fb_btn"
-        app:layout_constraintEnd_toEndOf="@+id/sendEmailBtn"
+        app:layout_constraintEnd_toEndOf="@+id/loginBtn"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toEndOf="@+id/fb_btn"
         app:layout_constraintTop_toTopOf="@+id/fb_btn" />
