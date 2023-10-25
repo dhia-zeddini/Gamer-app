@@ -1,6 +1,99 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-             android:layout_width="match_parent"
-             android:layout_height="match_parent">
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
 
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/materialCardView"
+        android:layout_width="395dp"
+        android:layout_height="170dp"
+        android:layout_margin="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:padding="5dp">
+
+            <ImageView
+                android:id="@+id/gameImage"
+                android:layout_width="100dp"
+                android:layout_height="match_parent"
+                android:scaleType="fitCenter"
+                app:srcCompat="@drawable/game2" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <TextView
+                    android:id="@+id/gameName"
+                    android:layout_width="200dp"
+                    android:layout_height="31dp"
+                    android:layout_marginStart="32dp"
+                    android:layout_marginTop="24dp"
+                    android:layout_marginEnd="184dp"
+                    android:gravity="center"
+                    android:text="event1"
+                    android:textAppearance="?attr/textAppearanceTitleMedium"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.258"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/gameType"
+                    android:layout_width="204dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="end|bottom"
+                    android:layout_marginTop="12dp"
+                    android:gravity="center"
+                    android:text="eventDate1"
+                    android:textAppearance="?attr/textAppearanceBodyMedium"
+                    android:textColor="#FF0000"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="@+id/gameName"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="@+id/gameName"
+                    app:layout_constraintTop_toBottomOf="@+id/gameName" />
+
+                <TextView
+                    android:id="@+id/gamePrice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:text="TextView"
+                    app:layout_constraintEnd_toEndOf="@+id/gameType"
+                    app:layout_constraintHorizontal_bias="0.397"
+                    app:layout_constraintStart_toStartOf="@+id/gameType"
+                    app:layout_constraintTop_toBottomOf="@+id/gameType" />
+
+                <ImageButton
+                    android:id="@+id/imageButton"
+                    android:layout_width="38dp"
+                    android:layout_height="68dp"
+                    android:layout_marginStart="103dp"
+                    android:layout_marginTop="96dp"
+                    android:layout_marginEnd="23dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/gamePrice"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/baseline_add_shopping_cart_24" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </LinearLayout>
+
+    </com.google.android.material.card.MaterialCardView>
 </androidx.constraintlayout.widget.ConstraintLayout>
