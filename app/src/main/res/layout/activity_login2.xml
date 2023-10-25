@@ -79,7 +79,7 @@
         app:layout_constraintTop_toBottomOf="@+id/PasswordInput" />
 
     <CheckBox
-        android:id="@+id/checkBox"
+        android:id="@+id/rememberMeBtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Remember Me"
@@ -96,7 +96,7 @@
         android:text="Login"
         app:layout_constraintEnd_toEndOf="@+id/PasswordInput"
         app:layout_constraintStart_toStartOf="@+id/PasswordInput"
-        app:layout_constraintTop_toBottomOf="@+id/checkBox" />
+        app:layout_constraintTop_toBottomOf="@+id/rememberMeBtn" />
 
     <TextView
         android:id="@+id/textView4"
